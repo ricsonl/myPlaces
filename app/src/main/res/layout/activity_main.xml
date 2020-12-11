@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@style/Theme.AppCompat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrey"
+    tools:context="android.teste.myplaces.Controller.MainActivity">
+
+    <TextView
+        android:id="@+id/lblName"
+        android:textColor="@color/colorText"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblName"
+        android:layout_margin="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <AutoCompleteTextView
+        android:id="@+id/edtName"
+        android:backgroundTint="@color/colorAccent"
+        android:textColor="@color/colorAccent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/lblName"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".85"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/lblCateg"
+        android:textColor="@color/colorText"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblCateg"
+        android:layout_margin="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtName" />
+
+    <Spinner
+        android:id="@+id/edtCateg"
+        android:backgroundTint="@color/colorAccent"
+        android:textColor="@color/colorAccent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/lblCateg"
+        android:spinnerMode="dropdown"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".85"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/titlePos"
+        android:textColor="@color/colorText"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titlePos"
+        android:textStyle="bold"
+        android:layout_margin="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtCateg" />
+
+    <TextView
+        android:id="@+id/lblPosLat"
+        android:textColor="@color/colorText"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblPosLat"
+        android:layout_margin="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titlePos" />
+
+    <TextView
+        android:id="@+id/outPosLat"
+        android:textColor="@color/colorLightGrey"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/latLngUndefined"
+        android:layout_margin="25dp"
+        app:layout_constraintLeft_toRightOf="@id/lblPosLong"
+        app:layout_constraintHorizontal_bias=".25"
+        app:layout_constraintTop_toBottomOf="@id/titlePos"
+        />
+
+    <TextView
+        android:id="@+id/lblPosLong"
+        android:textColor="@color/colorText"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblPosLong"
+        android:layout_margin="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lblPosLat" />
+
+    <TextView
+        android:id="@+id/outPosLong"
+        android:textColor="@color/colorLightGrey"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/latLngUndefined"
+        android:layout_margin="25dp"
+        app:layout_constraintLeft_toRightOf="@id/lblPosLong"
+        app:layout_constraintHorizontal_bias=".25"
+        app:layout_constraintTop_toBottomOf="@id/lblPosLat"
+        />
+
+    <Button
+        android:id="@+id/btnCheckin"
+        android:text="@string/btnCheckin"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@color/colorText"
+        android:layout_width="0dp"
+        android:layout_height="85dp"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".75"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblPosLong"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:onClick="checkin"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

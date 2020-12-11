@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/optMapBack"
+        android:title="@string/optMapBack"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/optMapManage"
+        android:title="@string/optMapManage"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/optMapReport"
+        android:title="@string/optMapReport"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/subOptMapType"
+        android:title="@string/subOptMapType"
+        app:showAsAction="never">
+        <menu>
+            <item
+                android:id="@+id/mapTypeNormal"
+                android:title="@string/mapTypeNormal" />
+            <item
+                android:id="@+id/mapTypeHybrid"
+                android:title="@string/mapTypeHybrid" />
+        </menu>
+    </item>
+</menu>

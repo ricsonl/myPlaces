@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">MyPlaces</string>
+    <string name="activity_manage_label">GestaoCheckin</string>
+    <string name="activity_map_label">MapaCheckin</string>
+    <string name="activity_report_label">Relatorio</string>
+
+    <string name="lblName">Nome do local:</string>
+    <string name="lblCateg">Categoria do local:</string>
+    <string name="titlePos">Posicionamento Global</string>
+    <string name="lblPosLat">Latitude:</string>
+    <string name="lblPosLong">Longitude:</string>
+    <string name="btnCheckin">Check-in</string>
+    <string name="latLngUndefined">carregando...</string>
+
+    <string name="toastLocationNotDef">Aguarde até que sua localização seja definida!</string>
+    <string name="toastLocationPermission">Você precisa permitir que o aplicativo obtenha sua localização!</string>
+    <string name="toastFillFields">Preencha todos os campos!</string>
+    <string name="toastChangesSuccess">Alterações feitas com sucesso!</string>
+    <string name="toastError">Erro</string>
+
+    <string name="optMainCheckin">Mapa de Check-in</string>
+    <string name="optMainManage">Gestão de Check-in</string>
+    <string name="optMainReport">Lugares mais visitados</string>
+
+    <string name="optMapBack">Voltar</string>
+    <string name="optMapManage">Gestão de Check-in</string>
+    <string name="optMapReport">Lugares mais visitados</string>
+    <string name="subOptMapType">Tipos de mapa</string>
+    <string name="mapTypeNormal">MAPA NORMAL</string>
+    <string name="mapTypeHybrid">MAPA HÍBRIDO</string>
+
+    <string name="optManageBack">Voltar</string>
+    <string name="titleManage">Gestão de Check-in</string>
+    <string name="lblDelete">EXCLUIR ?</string>
+
+    <string name="lblLocation">LOCAL:</string>
+
+    <string name="optReportBack">Voltar</string>
+    <string name="titleReport">Locais mais visitados</string>
+    <string name="lblVisits">VISITAS:</string>
+
+    <string name="modalDeleteCheckinTitle">Exclusão</string>
+    <string name="modalDeleteCheckinMsg">Tem certeza que deseja excluir %s ?</string>
+
+    <string name="modalYes">SIM</string>
+    <string name="modalNo">NÃO</string>
+
+    <string name="markerSnippet">Categoria: %s\nVisitas: %d</string>
+
+</resources>

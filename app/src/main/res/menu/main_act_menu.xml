@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/optMainMap"
+        android:title="@string/optMainCheckin"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/optMainManage"
+        android:title="@string/optMainManage"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/optMainReport"
+        android:title="@string/optMainReport"
+        app:showAsAction="never" />
+</menu>
